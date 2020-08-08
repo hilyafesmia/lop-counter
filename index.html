@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="title-page">
+				Momentum Counter
+			</div>
+		</div>
+		<div class="field">
+			<form class="calculator">
+				<label for="autPotential">Partner's Auth Potential</label>
+				<input required type="number" id="autPotential"/>
+				<label for="potential">Partner's Total Potential</label>
+				<input required type="number" id="potential"/>
+				<label for="level">Partner's Level</label>
+				<input required type="number" id="level"/>
+				<label for="autAttr">Partner's Auth Attribute</label>
+				<input required type="number" id="autAttr"/>
+				<input type="submit" value="Calculate"/>
+			</form>
+		</div>
+		<div class="container">
+		</div>
+	</body>
+	<script>
+		$('.calculator').on('submit', function () {
+			var autPot = $("#autPotential").val();
+			var potential = $("#potential").val();
+			var level = $("#level").val();
+			var autAttr = $("#autAttr").val();
+
+			var momentum = Math.floor(((((autPot * 30) + (potential * 5)) * level) + (autAttr * 0.1)) + 100);
+		    
+		    $(".container").html("<div class='result'>Your partner's momentum is <br/><h1>"+momentum+"</h1></div>");
+		    return false;
+		});
+	</script>
+</html>

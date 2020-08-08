@@ -1,0 +1,61 @@
+.header {
+background: linear-gradient(190.28deg, #E49CA5 0%, #EAB3B1 54.51%, #F2D5D1 92.63%);
+	height: 12vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	color: white;
+}	
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #F6F1E6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-page {
+	background: linear-gradient(180deg, #DD7E7E 0%, #E39897 68.75%, #EDBEBD 100%);
+	padding: 1rem 2rem;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.result {
+	background: linear-gradient(190.28deg, #E49CA5 0%, #EAB3B1 54.51%, #F2D5D1 92.63%);
+	width: 80vw;
+	padding: 2rem 0;
+	text-align: center;
+	color: white;
+}
+input {
+	width: 80vw;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+input[type=number]{
+	border-radius: 16px;
+	border: 0 none;
+	padding: 0.5rem;
+}
+
+input[type=submit]{
+	background: linear-gradient(180deg, #A3A6EB 0%, #CACBF4 68.23%, #F4F3FD 100%);
+	border-radius: 16px;
+	border: 0 none;
+	padding: 0.5rem;
+	color: white;
+	font-size: 1rem;
+}
