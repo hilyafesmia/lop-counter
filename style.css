@@ -13,6 +13,7 @@ background: linear-gradient(190.28deg, #E49CA5 0%, #EAB3B1 54.51%, #F2D5D1 92.63
 body {
 	margin: 0;
 	font-family: sans-serif;
+	font-size: 1rem;
 	background-color: #F6F1E6;
 	display: flex;
 	flex-direction: column;
@@ -42,13 +43,15 @@ body {
 input {
 	width: 80vw;
 	display: block;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
+	margin-top: 0.5rem;
+	height: 2.5rem;
 }
 
 input[type=number]{
 	border-radius: 16px;
 	border: 0 none;
-	padding: 0.5rem;
+	padding: 0 1rem;
 }
 
 input[type=submit]{
